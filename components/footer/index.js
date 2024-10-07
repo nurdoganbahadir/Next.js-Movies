@@ -1,9 +1,16 @@
+import Link from "next/link";
 
+import styles from "./styles.module.css";
 
 function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <footer className={styles.footer}>
+      Made with ❤️ by&nbsp;
+      <Link href="" target="_blank">
+        Nurdoğan Bahadır
+      </Link>
+    </footer>
+  );
 }
 
 export default Footer;
