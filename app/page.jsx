@@ -1,8 +1,19 @@
 import "@/styles/reset.css";
 import "@/styles/global.css";
 
-function page() {
-  return <div>Home</div>;
+import Movies from "@/mocks/movies.json";
+import Genres from "@/mocks/genres.json";
+
+import { FeaturedMovie } from "@/components/featured-movie";
+import { Categories } from "@/components/categories";
+
+function HomePage() {
+  return (
+    <div>
+      <FeaturedMovie movie={Movies.results[0]} />
+      <Categories categories={Genres.genres.slice(0, 5)} />
+    </div>
+  );
 }
 
-export default page;
+export default HomePage;
