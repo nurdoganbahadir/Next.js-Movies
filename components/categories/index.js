@@ -1,4 +1,4 @@
-import React from "react";
+
 import Link from "next/link";
 
 import styles from "./styles.module.css";
@@ -19,5 +19,5 @@ function Categories({ categories }) {
   );
 }
 
-
+export { CategoriesLoading } from "./loading";
 export { Categories };

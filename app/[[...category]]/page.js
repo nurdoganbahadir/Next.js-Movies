@@ -15,7 +15,7 @@ async function HomePage({ params }) {
     fetchGenres(),
   ];
 
-  if (!!params.category?.length) {
+  if (params.category?.length) {
     pagePromises.push(fetchMoviesByGenre(params.category[0]));
   }
 

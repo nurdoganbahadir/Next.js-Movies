@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import React from "react";
+
 import { MovieContainer } from "@/containers/movie";
 
 import { fetchSingleMovie } from "@/services/movie";
